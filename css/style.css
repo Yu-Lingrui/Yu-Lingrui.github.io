@@ -1,0 +1,60 @@
+/* body {
+  background: #000;
+  overflow: hidden;
+  margin: 0;
+} */
+body {
+  background: #000;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  /* flex-grow: 1; */
+}
+
+/* script {
+  z-index: -2;
+} */
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1; /* -1:将 canvas 放置在最底层 */
+  display: inline-block;
+}
+
+.button-container {
+  /* flex-grow: 1;
+  display: flex; 
+  align-items: flex-end; 
+  justify-content: center;
+  margin-bottom: 20px;  */
+  position: absolute; /* 设置按钮为绝对定位 */
+  top: 48%; /* 将按钮的顶部与父元素中点对齐 */
+  left: 50%; /* 将按钮的左侧与父元素中点对齐 */
+  transform: translate(-50%, -50%); 
+  /* 上移按钮的一半高度，左移按钮的一半宽度，使其在垂直和水平方向上居中 */
+}
+
+.enter-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+  cursor: pointer;
+  font-size: 20px; /* 调整文字大小，根据需要修改 */
+  border: 2px solid white; /* 添加边框，根据需要修改 */
+  border-radius: 20px; /* 圆角边框，根据需要修改 */
+}
+
+.enter-button:hover {
+  background-color: white;
+  color: black;
+}
