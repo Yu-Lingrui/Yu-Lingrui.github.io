@@ -12,6 +12,8 @@ body {
   flex-direction: column;
   min-height: 100vh;
   /* flex-grow: 1; */
+  cursor: none; 
+  /* cursor:url('https://www.xcsharp.top/read/mycur.cur') auto; */
 }
 
 /* script {
@@ -58,3 +60,14 @@ canvas {
   background-color: white;
   color: black;
 }
+
+#custom-cursor {
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: rgba(236, 11, 236, 3); /* 光影颜色，可以调整透明度和颜色 */
+  pointer-events: none; /* 让光标不影响交互 */
+  z-index: 99999; /* 确保光标在最上层 */
+  transform: translate(-50%, -50%);
+}      
