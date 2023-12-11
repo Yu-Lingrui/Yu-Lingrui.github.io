@@ -65,9 +65,10 @@ canvas {
   position: absolute;
   width: 36px;
   height: 36px;
-  border-radius: 50%;
-  background-color: rgba(236, 11, 236, 3); /* 光影颜色，可以调整透明度和颜色 */
+  border-radius: 50%;  /* 圆形 */
+  background-color: rgba(0, 0, 0, 1); /* 光影颜色，可以调整透明度和颜色 */
   pointer-events: none; /* 让光标不影响交互 */
   z-index: 99999; /* 确保光标在最上层 */
   transform: translate(-50%, -50%);
+  /* clip-path: path('M50 27 Q55 20, 60 27 Q65 20, 70 27 Q50 90, 30 27 Q35 20, 40 27'); */
 }      

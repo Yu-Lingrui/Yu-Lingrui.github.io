@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
         colorChangeTimeout = setTimeout(function () {
             const randomColor = getRandomColor();
             cursor.style.backgroundColor = randomColor;
-        }, 100);
+        }, 200);
 });
 
 let cursorTimeout;
