@@ -136,7 +136,7 @@ body::before{
 }
 
 body {
-  cursor: url("http://qykz8qw1j.hn-bkt.clouddn.com/picGo/Arrow.cur"),default;
+  /* cursor: url("http://qykz8qw1j.hn-bkt.clouddn.com/picGo/Arrow.cur"),default; */
   margin: 0;
   font-size: 14px;
   font-family: Helvetica Neue, Helvetica, STHeiTi, Arial, sans-serif;
@@ -718,12 +718,13 @@ body {
   background: #fff;
   width: 300px;
   position: fixed;
-  opacity: 1;
+  /* opacity: 1; */
   transition: all .2s ease-in;
   height: 100%;
-  z-index: 999;
-  overflow: hidden;
-  overflow-y: auto;
+  /* z-index: 999; */
+  z-index: 1;
+  /* overflow: hidden;
+  overflow-y: auto; */
   margin-bottom: 15px;
 	animation: before_Load_Left_col 2s linear 1, after_Load_Left_col .5s linear 0;
 }
